@@ -8,7 +8,7 @@ body{
     font-family: sans-serif;
 }
 .card{
-    background: #03e9f4;
+    background: #15575a;
     color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 5px #03e9f4,
@@ -46,6 +46,30 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button { 
     -webkit-appearance: none; 
     margin: 0; 
+}
+
+label{
+    font-size: large;
+    color: rgb(24, 25, 26);
+    padding-left: 30%;
+}
+
+#inicio{
+    border-radius: 50px;
+}
+#uno{
+    color: brown;
+}
+#Presupuesto{
+    color: aliceblue;
+}
+#fgastos{
+    background-color: aliceblue;
+    border-radius: 10px;
+    
+}
+input{
+    border-color: rgb(12, 12, 12);
 }
 
 .login-box form a {
