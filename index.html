@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/style_index.css">
+    <title>Presupuesto</title>
+</head>
+<body >    
+    <div class="container-fluid my-5 main-container">
+        <div class="row d-flex justify-content-evenly" >
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <h1 class="text-center text-negro mb-5">Control de Gastos</h1>
+                <div class="card " id="inicio">
+                    <div class="card-body text-center mb-12">
+                        <h3 class="text-center " id="Presupuesto">Ingresa tu Presupuesto</h3>    
+                        <input type="number" id="pres" class=" my-10" >
+                        <a type="btn" class="btn btn-primary" id="agregar">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Agregar</a>                         
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="row d-flex justify-content-evenly">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div  id="oculto" class="card rounded shadow d-none"  > 
+                <form class="row gx-3 gy-2 align-items-center" id="fgastos" >
+                    <div class="card-body text-center mb-12">
+                    <div class="col-md">
+                        <h3 for="ngasto">Nombre de gasto:</h3>
+                        <input type="text" id="ngasto" class="form-control my-3">
+                        <h3 for="vgasto">Valor de gasto:</h3>
+                        <input type="number" id="vgasto" class="form-control my-3">
+                        <button type="submit" class="btn btn-warning" id="gua">Guardar</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>            
+            <div class="col-12 col-sm-6 col-md-4 mb-4 " id="cardrestante">
+                <div class="card  rounded shadow "  >                
+                <h3 class="fw-bold text-center text-negro mb-5" id="restante"></h3> 
+                    <div class="card-body text-center mb-4" id="pintar"> 
+                        <table class="table table-dark table-striped">
+                            <thead >
+                                <tr>
+                                    <th>Nombre de Gasto</th>
+                                    <th>Valor</th>                                    
+                                </tr>
+                            </thead>
+                            <tbody id="tbody">
+                                
+                            </table>                      
+                    </div>
+                </div>             
+            </div>                
+        </div>  
+    </div>            
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script> 
+</body>
+</html>
